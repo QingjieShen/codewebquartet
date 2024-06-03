@@ -38,17 +38,210 @@ This framework leverages the following technologies:
 - Modular SASS files that allow for better organization and maintainability of styles.
 
 ## Built-in Classes
-#### Layout
-- container:
-- row: 
-- col: 
-#### Flexbox & Grid
+#### variables (make universal sizes, and color values as variables) - All
+#### codewebquartet (main file) - All
+#### font-family
+
+#### reset - Clark
+#### base (Base style goes here) - Clark
+lists
+links
+heading
+paragraph
+tables - Clark
+forms - Clark
+filters - Clark
+border - Clark
+backgrounds
+##### Backgrounds
+- Background Colors
+    - bg-black
+    - bg-dark
+    - bg-orange
+    - bg-gray
+    - bg-bone
+##### Borders
+- Border Radius:
+    - rounded-0
+    - rounded-1
+    - rounded-2
+    - rounded-3
+    - rounded-4
+    - rounded-5
+    - rounded-tl-0
+    - rounded-tl-1
+    - rounded-tl-2
+    - rounded-tl-3
+    - rounded-tl-4
+    - rounded-tl-5
+    - rounded-tr-0
+    - rounded-tr-1
+    - rounded-tr-2
+    - rounded-tr-3
+    - rounded-tr-4
+    - rounded-tr-5
+    - rounded-br-0
+    - rounded-br-1
+    - rounded-br-2
+    - rounded-br-3
+    - rounded-br-4
+    - rounded-br-5
+    - rounded-bl-0
+    - rounded-bl-1
+    - rounded-bl-2
+    - rounded-bl-3
+    - rounded-bl-4
+    - rounded-bl-5
+- Border Width:
+    - border-0
+    - border-1
+    - border-2
+    - border-3
+    - border-4
+    - border-5
+- Border Color:
+    - border-black
+    - border-dark
+    - border-orange
+    - border-gray
+    - border-bone
+- Border Style:
+    - border-solid
+    - border-dashed
+    - border-dotted
+    - border-double
+    - border-hidden
+    - border-none
+    - border-bottom-solid
+    - border-bottom-dashed
+    - border-bottom-dotted
+    - border-bottom-double
+    - border-bottom-hidden
+    - border-bottom-none
+    - border-top-solid
+    - border-top-dashed
+    - border-top-dotted
+    - border-top-double
+    - border-top-hidden
+    - border-top-none
+    - border-right-solid
+    - border-right-dashed
+    - border-right-dotted
+    - border-right-double
+    - border-right-hidden
+    - border-right-none
+    - border-left-solid
+    - border-left-dashed
+    - border-left-dotted
+    - border-left-double
+    - border-left-hidden
+    - border-left-none
+##### Tables
+- Table Border
+    - border-collapse
+    - border-separate
+- Table Border Spacing
+    - table-boarder-spacing-0
+    - table-boarder-spacing-1
+    - table-boarder-spacing-2
+    - table-boarder-spacing-3
+    - table-boarder-spacing-4
+    - table-boarder-spacing-5
+    - table-boarder-x-spacing-0
+    - table-boarder-x-spacing-1
+    - table-boarder-x-spacing-2
+    - table-boarder-x-spacing-3
+    - table-boarder-x-spacing-4
+    - table-boarder-x-spacing-5
+    - table-boarder-y-spacing-0
+    - table-boarder-y-spacing-1
+    - table-boarder-y-spacing-2
+    - table-boarder-y-spacing-3
+    - table-boarder-y-spacing-4
+    - table-boarder-y-spacing-5
+- Table Layout
+    - table-auto
+    - table-fixed
+##### Forms
+- Inputs:
+    - form-input
+    - form-textarea
+    - form-select
+    - form-checkbox
+    - form-radio
+    - form-multiselect
+- Buttons:
+    - btn
+    - btn-primary
+    - btn-secdonary
+##### Lists
+- List Style Type:
+    - list-none
+    - list-disc
+    - list-decimal
+##### Links
+- Link Style:
+    - link-normal
+    - link-activated
+#### layout - Clark
+##### flex & grid
 - d-flex:
 - flex-row:
 - flex-column: 
 - grid: 
 - grid-cols-2: 
-#### Spacing
+##### media query - Clark
+
+#### typography
+##### Font Size
+    - text-1
+    - text-2
+    - text-3
+    - text-4
+    - text-5
+    - text-6
+##### Font Style
+    - text-regular
+    - text-ligth
+    - text-medium
+    - text-bold
+    - text-light
+    - text-regular-italic
+    - text-ligth-italic
+    - text-medium-italic
+    - text-bold-italic
+    - text-light-italic
+##### Letter Spacing
+    - tracking-1
+    - tracking-2
+    - tracking-3
+    - tracking-4
+    - tracking-5
+##### Line Height
+    - leading-1
+    - leading-2
+    - leading-3
+    - leading-4
+    - leading-5
+##### Text Align
+    - text-left
+    - text-center
+    - text-right
+    - text-justify
+    - text-start
+    - text-end
+##### Text Color
+    - text-black
+    - text-dark
+    - text-orange
+    - text-gray
+    - text-bone
+##### Text Decoration
+    - text-underline
+    - text-overline
+    - text-middleline
+    - text-noline
+##### spacing
 - All direction margin:
     - m-0
     - m-1
@@ -147,7 +340,7 @@ This framework leverages the following technologies:
     - pl-3
     - pl-4
     - pl-5
-#### Sizing
+##### Sizing
 - Absoulte width
     - w-100
     - w-200
@@ -192,141 +385,9 @@ This framework leverages the following technologies:
     - hp-9
     - hp-10
     - h-screen
-#### Typography
-- Font Family
-    - font-sans
-    - font-serif
-- Font Size
-    - text-1
-    - text-2
-    - text-3
-    - text-4
-    - text-5
-    - text-6
-- Font Style
-    - text-regular
-    - text-ligth
-    - text-medium
-    - text-bold
-    - text-light
-    - text-regular-italic
-    - text-ligth-italic
-    - text-medium-italic
-    - text-bold-italic
-    - text-light-italic
-- Letter Spacing
-    - tracking-1
-    - tracking-2
-    - tracking-3
-    - tracking-4
-    - tracking-5
-- Line Height
-    - leading-1
-    - leading-2
-    - leading-3
-    - leading-4
-    - leading-5
-- Text Align
-    - text-left
-    - text-center
-    - text-right
-    - text-justify
-    - text-start
-    - text-end
-- Text Color
-    - text-black
-    - text-dark
-    - text-orange
-    - text-gray
-    - text-bone
-- Text Decoration
-    - text-underline
-    - text-overline
-    - text-middleline
-    - text-noline
-#### Backgrounds
-- Background Colors
-    - bg-black
-    - bg-dark
-    - bg-orange
-    - bg-gray
-    - bg-bone
-#### Borders
-- Border Radius:
-    - rounded-0
-    - rounded-1
-    - rounded-2
-    - rounded-3
-    - rounded-4
-    - rounded-5
-    - rounded-tl-0
-    - rounded-tl-1
-    - rounded-tl-2
-    - rounded-tl-3
-    - rounded-tl-4
-    - rounded-tl-5
-    - rounded-tr-0
-    - rounded-tr-1
-    - rounded-tr-2
-    - rounded-tr-3
-    - rounded-tr-4
-    - rounded-tr-5
-    - rounded-br-0
-    - rounded-br-1
-    - rounded-br-2
-    - rounded-br-3
-    - rounded-br-4
-    - rounded-br-5
-    - rounded-bl-0
-    - rounded-bl-1
-    - rounded-bl-2
-    - rounded-bl-3
-    - rounded-bl-4
-    - rounded-bl-5
-- Border Width:
-    - border-0
-    - border-1
-    - border-2
-    - border-3
-    - border-4
-    - border-5
-- Border Color:
-    - border-black
-    - border-dark
-    - border-orange
-    - border-gray
-    - border-bone
-- Border Style:
-    - border-solid
-    - border-dashed
-    - border-dotted
-    - border-double
-    - border-hidden
-    - border-none
-    - border-bottom-solid
-    - border-bottom-dashed
-    - border-bottom-dotted
-    - border-bottom-double
-    - border-bottom-hidden
-    - border-bottom-none
-    - border-top-solid
-    - border-top-dashed
-    - border-top-dotted
-    - border-top-double
-    - border-top-hidden
-    - border-top-none
-    - border-right-solid
-    - border-right-dashed
-    - border-right-dotted
-    - border-right-double
-    - border-right-hidden
-    - border-right-none
-    - border-left-solid
-    - border-left-dashed
-    - border-left-dotted
-    - border-left-double
-    - border-left-hidden
-    - border-left-none
+##### font-weight
+#### backgrounds
+
 #### Effects
 - Box Shadow Size:
     - box-shadow-0
@@ -366,53 +427,3 @@ This framework leverages the following technologies:
     - contrast-4
     - contrast-5
 
-#### Tables
-- Table Border
-    - border-collapse
-    - border-separate
-- Table Border Spacing
-    - table-boarder-spacing-0
-    - table-boarder-spacing-1
-    - table-boarder-spacing-2
-    - table-boarder-spacing-3
-    - table-boarder-spacing-4
-    - table-boarder-spacing-5
-    - table-boarder-x-spacing-0
-    - table-boarder-x-spacing-1
-    - table-boarder-x-spacing-2
-    - table-boarder-x-spacing-3
-    - table-boarder-x-spacing-4
-    - table-boarder-x-spacing-5
-    - table-boarder-y-spacing-0
-    - table-boarder-y-spacing-1
-    - table-boarder-y-spacing-2
-    - table-boarder-y-spacing-3
-    - table-boarder-y-spacing-4
-    - table-boarder-y-spacing-5
-- Table Layout
-    - table-auto
-    - table-fixed
-#### Forms
-- Inputs:
-    - form-input
-    - form-textarea
-    - form-select
-    - form-checkbox
-    - form-radio
-    - form-multiselect
-- Buttons:
-    - btn
-    - btn-primary
-    - btn-secdonary
-- form-control: Styles input elements.
-- form-group: Wraps form elements together.
-- btn, .btn-primary, .btn-secondary: Styles buttons with different themes.
-#### Lists
-- List Style Type:
-    - list-none
-    - list-disc
-    - list-decimal
-#### Links
-- Link Style:
-    - link-normal
-    - link-activated
