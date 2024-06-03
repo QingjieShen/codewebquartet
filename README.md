@@ -386,7 +386,6 @@ backgrounds
     - hp-10
     - h-screen
 ##### font-weight
-#### backgrounds
 
 #### Effects
 - Box Shadow Size:
