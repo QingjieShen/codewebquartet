@@ -18,7 +18,7 @@ npm install sass
 ```
 4. Compile the SASS files:
 ```
-sass --watch main.scss css/style.css
+sass --watch codewebquartet.scss css/style.css
 ```
 5. Include the compiled CSS in the HTML file
 ```
