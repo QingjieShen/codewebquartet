@@ -1,6 +1,34 @@
 ## Introduction
 This framework is designed to provide a set of well-designed, responsive, and customizable class names to streamline your web development process. Built on the power of SASS and organized through SASS partials, this framework allows you to quickly apply consistent styling across your projects while maintaining the flexibility to modify default settings to fit your unique design needs.
 
+## Getting Started
+To start using the custom CSS Framework, following these steps:
+
+1. clone the repository:
+```
+https://github.com/QingjieShen/codewebquartet
+```
+2. Navigate to the project directory:
+```
+cd codewebquartet
+```
+3. Install dependencies:
+```
+npm install sass
+```
+4. Compile the SASS files:
+```
+sass --watch main.scss css/style.css
+```
+5. Include the compiled CSS in the HTML file
+```
+<link rel="stylesheet" href="path/to/compiled/css/styles.css">
+```
+> If you are using the example file which is "index.html", then the link will be:
+```
+<link rel="stylesheet" href="css/style.css">
+```
+
 ## Technology
 This framework leverages the following technologies:
 
