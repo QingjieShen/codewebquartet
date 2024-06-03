@@ -10,7 +10,7 @@ https://github.com/QingjieShen/codewebquartet
 ```
 2. Navigate to the project directory:
 ```
-cd codewebquartet
+cd src
 ```
 3. Install dependencies:
 ```
@@ -18,7 +18,7 @@ npm install sass
 ```
 4. Compile the SASS files:
 ```
-sass --watch codewebquartet.scss css/style.css
+sass --watch codewebquartet.scss ../css/style.css
 ```
 5. Include the compiled CSS in the HTML file
 ```
@@ -40,7 +40,7 @@ This framework leverages the following technologies:
 ## Built-in Classes
 #### variables (make universal sizes, and color values as variables) - All
 #### codewebquartet (main file) - All
-#### font-family
+#### font-family - Faye
 
 #### reset - Clark
 #### base (Base style goes here) - Clark
@@ -184,7 +184,7 @@ backgrounds
     - link-normal
     - link-activated
 #### layout - Clark
-##### flex & grid
+##### flex & grid -Clark
 - d-flex:
 - flex-row:
 - flex-column: 
@@ -193,14 +193,14 @@ backgrounds
 ##### media query - Clark
 
 #### typography
-##### Font Size
+##### Font Siz - Faye
     - text-1
     - text-2
     - text-3
     - text-4
     - text-5
     - text-6
-##### Font Style
+##### Font Style - Faye
     - text-regular
     - text-ligth
     - text-medium
@@ -211,37 +211,37 @@ backgrounds
     - text-medium-italic
     - text-bold-italic
     - text-light-italic
-##### Letter Spacing
+##### Letter Spacing - Faye
     - tracking-1
     - tracking-2
     - tracking-3
     - tracking-4
     - tracking-5
-##### Line Height
+##### Line Height - Faye
     - leading-1
     - leading-2
     - leading-3
     - leading-4
     - leading-5
-##### Text Align
+##### Text Align - Hashan
     - text-left
     - text-center
     - text-right
     - text-justify
     - text-start
     - text-end
-##### Text Color
+##### Text Color - Hashan
     - text-black
     - text-dark
     - text-orange
     - text-gray
     - text-bone
-##### Text Decoration
+##### Text Decoration - Hashan
     - text-underline
     - text-overline
     - text-middleline
     - text-noline
-##### spacing
+##### spacing - Dulara
 - All direction margin:
     - m-0
     - m-1
@@ -340,7 +340,6 @@ backgrounds
     - pl-3
     - pl-4
     - pl-5
-##### Sizing
 - Absoulte width
     - w-100
     - w-200
@@ -385,9 +384,9 @@ backgrounds
     - hp-9
     - hp-10
     - h-screen
-##### font-weight
+##### font-weight - Dulara
 
-#### Effects
+#### Effects - Clark
 - Box Shadow Size:
     - box-shadow-0
     - box-shadow-1
@@ -403,7 +402,7 @@ backgrounds
     - box-opacity-4
     - box-opacity-5
 
-#### Filters
+#### Filters - Clark
 - Blur:
     - blur-0
     - blur-1

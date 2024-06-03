@@ -1,0 +1,5 @@
+@use '_variables';
+
+.bg-orange {
+    background-color: variables.$bg-orange;
+}
