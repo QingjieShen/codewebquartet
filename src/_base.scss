@@ -1,5 +1,18 @@
 @use '_variables';
 
-.bg-orange {
-    background-color: variables.$bg-orange;
+// Links
+a {
+    text-decoration: underline;
+    color: variables.$text-orange;
 }
+
+a:hover {
+    cursor: pointer;
+    color: variables.$text-bone;
+}
+
+a:active, a:visited {
+    color: variables.$text-bone;
+}
+
+// 
