@@ -15,4 +15,33 @@ a:active, a:visited {
     color: variables.$text-bone;
 }
 
-// 
+// Lists
+ul, .ul-disc {
+    list-style: disc;
+    margin-left: 1rem;
+}
+
+.ul-circle {
+    list-style: circle;
+}
+
+.ul-squire {
+    list-style: square;
+}
+
+ol, .ol-decimal {
+    list-style: decimal;
+    margin-left: 1rem;
+}
+
+.ol-roman {
+    list-style: upper-roman;
+}
+
+.ol-alpha-lower {
+    list-style: lower-alpha;
+}
+
+.ol-alpha-upper {
+    list-style: upper-alpha;
+}
