@@ -49,3 +49,20 @@ ol, .ol-decimal {
 .ol-alpha-upper {
     list-style: upper-alpha;
 }
+
+// background color
+.bg-black {
+    background-color: variables.$bg-black;
+}
+.bg-dark {
+    background-color: variables.$bg-dark;
+}
+.bg-orange {
+    background-color: variables.$bg-orange;
+}
+.bg-gray {
+    background-color: variables.$bg-gray;
+}
+.bg-bone {
+    background-color: variables.$bg-bone;
+}
