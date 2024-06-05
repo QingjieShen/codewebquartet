@@ -86,3 +86,46 @@ ol, .ol-decimal {
 .rounded-50 {
     border-radius: 50%;
 }
+// border width
+.border-0 {
+    border-width: 0;
+}
+.border-1 {
+    border-width: 1px;
+}
+.border-2 {
+    border-width: 2px;
+}
+.border-3 {
+    border-width: 3px;
+}
+// border color
+.border-color-black {
+    border-color: variables.$text-black;
+}
+.border-color-dark {
+    border-color: variables.$text-dark;
+}
+.border-color-orange {
+    border-color: variables.$text-orange;
+}
+.border-color-gray {
+    border-color: variables.$text-gray;
+}
+.border-color-bone {
+    border-color: variables.$text-bone;
+}
+
+// border style
+.border-style-solid {
+    border-style: solid;
+}
+.border-style-dashed {
+    border-style: dashed;
+}
+.border-style-double {
+    border-style: double;
+}
+.border-style-dotted {
+    border-style: dotted;
+}
