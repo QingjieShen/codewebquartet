@@ -265,3 +265,30 @@ button:hover {
     color: variables.$text-black;
     background-image: none;
 }
+
+// table
+table {
+    display: inline-block;
+    border: 2px solid variables.$bg-gray;
+    color: variables.$text-black;
+
+    tr {
+        border-bottom: 1px dashed variables.$bg-gray;
+    }
+
+    tr:last-child {
+        border-bottom: none;
+    }
+
+    td, th {
+        padding: 0.3rem 0.4rem;
+        border-right: 1px dashed variables.$bg-gray;
+    }
+    tr > td:last-child, tr > th:last-child {
+        border-right: none;
+    }
+
+    th {
+        font-weight: bold;
+    }
+}
