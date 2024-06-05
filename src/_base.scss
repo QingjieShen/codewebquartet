@@ -140,15 +140,7 @@ ol, .ol-decimal {
     box-shadow: inset 0px 0px 2px variables.$text-orange;;
 }
 
-input[type=text] {
-    @include input-box;
-}
-
-input[type=text]:focus {
-    border-width: 3px;
-}
-
-.input-radio {
+@mixin input-radio {
     display: inline-block;
     position: relative;
     padding-left: 1.8rem;
@@ -161,7 +153,9 @@ input[type=text]:focus {
     user-select: none;
 
     span {
-        display: inline-block;
+        display: flex;
+        align-items:center;
+        justify-content: center;
         position: absolute;
         top: 0;
         left: 0;
@@ -173,5 +167,50 @@ input[type=text]:focus {
 
     input:checked ~ span {
         background-color: variables.$bg-orange;
+    }
+
+    input:checked ~ span:after {
+        display: block;
+    }
+}
+
+// text input
+input[type=text] {
+    @include input-box;
+}
+
+input[type=text]:focus {
+    border-width: 3px;
+}
+
+// radio input
+.input-radio {
+    @include input-radio;
+    span:after {
+        content: "";
+        display: none;
+        width: 0.125rem;
+        height: 0.125rem;
+        border: solid variables.$text-white;
+        border-width: 5px;
+        border-radius: 50%;
+    }
+}
+
+// checkbox input
+.input-checkbox {
+    @include input-radio;
+    span {
+        border-radius: 0;
+    }
+
+    span:after {
+        content: "";
+        display: none;
+        width: 0.4rem;
+        height: 0.8rem;
+        border: solid variables.$text-white;
+        border-width: 0 0.15rem 0.15rem 0;
+        transform: rotate(45deg);
     }
 }
