@@ -1,0 +1,61 @@
+@use 'variables';
+
+// blur
+.blur-0 {
+    filter: blur(0);
+}
+.blur-1 {
+    filter: blur(0.1rem);
+}
+.blur-2 {
+    filter: blur(0.2rem);
+}
+.blur-3 {
+    filter: blur(0.3rem);
+}
+.blur-4 {
+    filter: blur(0.5rem);
+}
+.blur-5 {
+    filter: blur(1rem);
+}
+
+// brightness
+.brightness-0 {
+    filter: brightness(1);
+}
+.brightness-1 {
+    filter: brightness(0.25);
+}
+.brightness-2 {
+    filter: brightness(0.5);
+}
+.brightness-3 {
+    filter: brightness(1);
+}
+.brightness-4 {
+    filter: brightness(1.5);
+}
+.brightness-5 {
+    filter: brightness(2);
+}
+
+// contrast
+.contrast-0 {
+    filter: contrast(1);
+}
+.contrast-1 {
+    filter: contrast(0.25);
+}
+.contrast-2 {
+    filter: contrast(0.5);
+}
+.contrast-3 {
+    filter: contrast(1);
+}
+.contrast-4 {
+    filter: contrast(1.5);
+}
+.contrast-5 {
+    filter: contrast(2);
+}
