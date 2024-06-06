@@ -1,4 +1,62 @@
 @use '_variables';
+// basic 
+* {
+    margin: auto 0.1rem;
+}
+
+// heading
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+// paragraph 
+@mixin basic-text {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+p {
+    @include basic-text;
+    margin: 0.2rem auto;
+}
+
+// div
+div {
+    @include basic-text;
+    margin: 0.3rem auto;
+}
+
+// span 
+span {
+    @include basic-text;
+    display: inline-block;
+}
+
+// b
+b {
+    font-weight: bold;
+}
 
 // Links
 a {
