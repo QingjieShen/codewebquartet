@@ -1,5 +1,364 @@
 @use '_variables';
+// basic 
+* {
+    margin: auto 0.1rem;
+}
 
+// heading
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+// paragraph 
+@mixin basic-text {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+p {
+    @include basic-text;
+    margin: 0.2rem auto;
+}
+
+// div
+div {
+    @include basic-text;
+    margin: 0.3rem auto;
+}
+
+// span 
+span {
+    @include basic-text;
+    display: inline-block;
+}
+
+// b
+b {
+    font-weight: bold;
+}
+
+// Links
+a {
+    text-decoration: underline;
+    color: variables.$text-orange;
+}
+
+a:hover {
+    cursor: pointer;
+    color: variables.$text-bone;
+}
+
+a:active, a:visited {
+    color: variables.$text-bone;
+}
+
+// Lists
+ul, .ul-disc {
+    list-style: disc;
+    margin-left: 1rem;
+}
+
+.ul-circle {
+    list-style: circle;
+}
+
+.ul-squire {
+    list-style: square;
+}
+
+.ul-none {
+    list-style: none;
+}
+
+ol, .ol-decimal {
+    list-style: decimal;
+    margin-left: 1rem;
+}
+
+.ol-roman {
+    list-style: upper-roman;
+}
+
+.ol-alpha-lower {
+    list-style: lower-alpha;
+}
+
+.ol-alpha-upper {
+    list-style: upper-alpha;
+}
+
+// background color
+.bg-black {
+    background-color: variables.$bg-black;
+}
+.bg-dark {
+    background-color: variables.$bg-dark;
+}
 .bg-orange {
     background-color: variables.$bg-orange;
+}
+.bg-gray {
+    background-color: variables.$bg-gray;
+}
+.bg-bone {
+    background-color: variables.$bg-bone;
+}
+
+// border
+.rounded-0 {
+    border-radius: 0;
+}
+.rounded-1 {
+    border-radius: 0.125rem;
+}
+.rounded-2 {
+    border-radius: 0.25rem;
+}
+.rounded-3 {
+    border-radius: 0.5rem;
+}
+.rounded-10 {
+    border-radius: 10%;
+}
+.rounded-50 {
+    border-radius: 50%;
+}
+// border width
+.border-0 {
+    border-width: 0;
+}
+.border-1 {
+    border-width: 1px;
+}
+.border-2 {
+    border-width: 2px;
+}
+.border-3 {
+    border-width: 3px;
+}
+// border color
+.border-color-black {
+    border-color: variables.$text-black;
+}
+.border-color-dark {
+    border-color: variables.$text-dark;
+}
+.border-color-orange {
+    border-color: variables.$text-orange;
+}
+.border-color-gray {
+    border-color: variables.$text-gray;
+}
+.border-color-bone {
+    border-color: variables.$text-bone;
+}
+
+// border style
+.border-style-solid {
+    border-style: solid;
+}
+.border-style-dashed {
+    border-style: dashed;
+}
+.border-style-double {
+    border-style: double;
+}
+.border-style-dotted {
+    border-style: dotted;
+}
+
+
+// form
+@mixin input-box {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0.125rem;
+    padding: 3px 6px;
+    border-color: variables.$text-gray;
+    box-shadow: inset 0px 0px 2px variables.$text-gray;;
+}
+
+@mixin input-radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: variables.$bg-bone;
+        border-radius: 50%;
+    }
+
+    input:checked ~ span {
+        background-color: variables.$bg-orange;
+    }
+
+    input:checked ~ span:after {
+        display: block;
+    }
+}
+
+// text input
+input[type=text] {
+    @include input-box;
+}
+
+input[type=text]:focus {
+    border-width: 3px;
+    border-color: variables.$text-orange;
+    box-shadow: inset 0px 0px 2px variables.$text-orange;
+}
+
+// textarea input
+textarea {
+    @include input-box();
+    border-radius: 0.25rem;
+}
+
+textarea:focus {
+    border-width: 3px;
+    border-color: variables.$text-orange;
+    box-shadow: inset 0px 0px 2px variables.$text-orange;
+}
+
+// radio input
+.input-radio {
+    @include input-radio;
+    span:after {
+        content: "";
+        display: none;
+        width: 0.125rem;
+        height: 0.125rem;
+        border: solid variables.$text-white;
+        border-width: 5px;
+        border-radius: 50%;
+    }
+}
+
+// checkbox input
+.input-checkbox {
+    @include input-radio;
+    span {
+        border-radius: 0;
+    }
+
+    span:after {
+        content: "";
+        display: none;
+        width: 0.5rem;
+        height: 0.8rem;
+        border: solid variables.$text-white;
+        border-width: 0 0.2rem 0.2rem 0;
+        transform: rotate(45deg);
+    }
+}
+
+// button
+@mixin base-button($start-color, $end-color) {
+    margin: 0.25rem 0;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg, $start-color 40%, $end-color) 1;
+    border-radius: 0.3rem;
+    background-clip: padding-box;
+    color: variables.$text-black;
+    display: block;
+    min-width:100px;
+    text-align: center;
+}
+
+button {
+    @include base-button(variables.$border-yellow, variables.$border-orange);
+}
+
+button:hover {
+    @include base-button(variables.$text-white, variables.$text-white);
+    background-image: linear-gradient(90deg, variables.$border-yellow, variables.$border-orange);
+    color: variables.$text-white;
+}
+
+.btn-solid {
+    @include base-button(variables.$text-white, variables.$text-white);
+    background-image: linear-gradient(90deg, variables.$border-yellow, variables.$border-orange);
+    color: variables.$text-white;
+}
+
+.btn-solid:hover {
+    @include base-button(variables.$border-yellow, variables.$border-orange);
+    color: variables.$text-black;
+    background-image: none;
+}
+
+// table
+@mixin table($border-style, $cell-style, $color) {
+    display: inline-block;
+    border: 2px $border-style $color;
+    color: variables.$text-black;
+
+    tr {
+        border-bottom: 1px $cell-style $color;
+    }
+
+    tr:last-child {
+        border-bottom: none;
+    }
+
+    td, th {
+        padding: 0.3rem 0.4rem;
+        border-right: 1px $cell-style $color;
+    }
+    tr > td:last-child, tr > th:last-child {
+        border-right: none;
+    }
+
+    th {
+        font-weight: bold;
+    }
+}
+
+table {
+    @include table(solid, dashed, variables.$text-gray);
+}
+
+.table-dashed-orange {
+    @include table(dashed, dashed, variables.$text-orange);
+}
+
+.table-solid-black {
+    @include table(solid, solid, variables.$text-black);
 }
