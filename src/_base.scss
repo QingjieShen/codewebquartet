@@ -267,13 +267,13 @@ button:hover {
 }
 
 // table
-table {
+@mixin table($border-style, $cell-style, $color) {
     display: inline-block;
-    border: 2px solid variables.$bg-gray;
+    border: 2px $border-style $color;
     color: variables.$text-black;
 
     tr {
-        border-bottom: 1px dashed variables.$bg-gray;
+        border-bottom: 1px $cell-style $color;
     }
 
     tr:last-child {
@@ -282,7 +282,7 @@ table {
 
     td, th {
         padding: 0.3rem 0.4rem;
-        border-right: 1px dashed variables.$bg-gray;
+        border-right: 1px $cell-style $color;
     }
     tr > td:last-child, tr > th:last-child {
         border-right: none;
@@ -291,4 +291,16 @@ table {
     th {
         font-weight: bold;
     }
+}
+
+table {
+    @include table(solid, dashed, variables.$text-gray);
+}
+
+.table-dashed-orange {
+    @include table(dashed, dashed, variables.$text-orange);
+}
+
+.table-solid-black {
+    @include table(solid, solid, variables.$text-black);
 }
