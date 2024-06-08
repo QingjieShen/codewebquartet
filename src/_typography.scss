@@ -2,44 +2,44 @@
 
 // Headings
 h1 {
-    font-size: $font-3x;
-    font-weight: $font-extrabold;
-    margin-bottom: $font-md;
+    font-size: variables.$font-3x;
+    font-weight: variables.$font-extrabold;
+    margin-bottom: variables.$font-md;
 }
 
 h2 {
-    font-size: $font-2x;
-    font-weight: $font-bold;
-    margin-bottom: $font-md;
+    font-size: variables.$font-2x;
+    font-weight: variables.$font-bold;
+    margin-bottom: variables.$font-md;
 }
 
 h3 {
-    font-size: $font-xl;
-    font-weight: $font-semibold;
-    margin-bottom: $font-md;
+    font-size: variables.$font-xl;
+    font-weight: variables.$font-semibold;
+    margin-bottom: variables.$font-md;
 }
 
 h4 {
-    font-size: $font-lg;
-    font-weight: $font-medium;
-    margin-bottom: $font-md;
+    font-size: variables.$font-lg;
+    font-weight: variables.$font-medium;
+    margin-bottom: variables.$font-md;
 }
 
 h5 {
-    font-size: $font-md;
-    font-weight: $font-medium;
-    margin-bottom: $font-md;
+    font-size: variables.$font-md;
+    font-weight: variables.$font-medium;
+    margin-bottom: variables.$font-md;
 }
 
 h6 {
-    font-size: $font-sm;
-    font-weight: $font-regular;
-    margin-bottom: $font-sm;
+    font-size: variables.$font-sm;
+    font-weight: variables.$font-regular;
+    margin-bottom: variables.$font-sm;
 }
 
 // Paragraphs
 p {
-    font-size: $font-md;
-    line-height: $line-height-3; 
-    margin-bottom: $font-md; 
+    font-size: variables.$font-md;
+    line-height: variables.$line-height-3; 
+    margin-bottom: variables.$font-md; 
 }
