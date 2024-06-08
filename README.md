@@ -193,36 +193,30 @@ backgrounds
 ##### media query - Clark
 
 #### typography
-##### Font Siz - Faye
-    - text-1
-    - text-2
-    - text-3
-    - text-4
-    - text-5
-    - text-6
+##### Font Size - Faye
+    - font-xs
+    - font-sm
+    - font-md
+    - font-lg
+    - font-xl
+
 ##### Font Style - Faye
-    - text-regular
-    - text-ligth
-    - text-medium
-    - text-bold
-    - text-light
-    - text-regular-italic
-    - text-ligth-italic
-    - text-medium-italic
-    - text-bold-italic
-    - text-light-italic
+    - font-style-normal
+    - font-style-bold
+    - font-style-italic
+    
 ##### Letter Spacing - Faye
-    - tracking-1
-    - tracking-2
-    - tracking-3
-    - tracking-4
-    - tracking-5
+    - letter-spacing-1
+    - letter-spacing-2
+    - letter-spacing-3
+    - letter-spacing-4
+    - letter-spacing-5
 ##### Line Height - Faye
-    - leading-1
-    - leading-2
-    - leading-3
-    - leading-4
-    - leading-5
+    - line-height-1
+    - line-height-2
+    - line-height-3
+    - line-height-4
+    - line-height-5
 ##### Text Align - Hashan
     - text-left
     - text-center
