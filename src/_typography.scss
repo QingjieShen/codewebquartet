@@ -43,3 +43,53 @@ p {
     line-height: variables.$line-height-3; 
     margin-bottom: variables.$font-md; 
 }
+
+.align-text-left
+{
+    text-align: variables.$text-left;
+}
+
+.align-text-center
+{
+    text-align: variables.$text-center;
+}
+
+.align-text-right
+{
+    text-align: variables.$text-right;
+}
+
+.align-text-justify
+{
+    text-align: variables.$text-justify;
+}
+
+.align-text-start
+{
+    text-align: variables.$text-start;
+}
+
+.align-text-end
+{
+    text-align: variables.$text-end;
+}
+
+.text-decoration-underline
+{
+    text-decoration: variables.$text-decoration-underline;
+}
+
+.text-decoration-overline
+{
+    text-decoration: variables.$text-decoration-overline;
+}
+
+.text-decoration-middleline
+{
+    text-decoration: variables.$text-decoration-middleline;
+}
+
+.text-decoration-none
+{
+    text-decoration: variables.$text-decoration-none;
+}
