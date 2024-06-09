@@ -46,50 +46,50 @@ p {
 
 .align-text-left
 {
-    text-align: variables.$text-left;
+    text-align: left;
 }
 
 .align-text-center
 {
-    text-align: variables.$text-center;
+    text-align: center;
 }
 
 .align-text-right
 {
-    text-align: variables.$text-right;
+    text-align: right;
 }
 
 .align-text-justify
 {
-    text-align: variables.$text-justify;
+    text-align: justify;
 }
 
 .align-text-start
 {
-    text-align: variables.$text-start;
+    text-align: start;
 }
 
 .align-text-end
 {
-    text-align: variables.$text-end;
+    text-align: end;
 }
 
 .text-decoration-underline
 {
-    text-decoration: variables.$text-decoration-underline;
+    text-decoration: underline;
 }
 
 .text-decoration-overline
 {
-    text-decoration: variables.$text-decoration-overline;
+    text-decoration: overline;
 }
 
 .text-decoration-middleline
 {
-    text-decoration: variables.$text-decoration-middleline;
+    text-decoration: line-through;
 }
 
 .text-decoration-none
 {
-    text-decoration: variables.$text-decoration-none;
+    text-decoration: none;
 }
