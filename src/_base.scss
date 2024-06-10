@@ -336,3 +336,70 @@ table {
 .table-solid-black {
     @include table(solid, solid, variables.$text-black);
 }
+
+// Margin utility classes
+// All direction margin
+.m-0 { margin: $spacing-0; }
+.m-1 { margin: $spacing-1; }
+.m-2 { margin: $spacing-2; }
+.m-3 { margin: $spacing-3; }
+.m-4 { margin: $spacing-4; }
+.m-5 { margin: $spacing-5; }
+
+// x-axis margin
+.mx-0 { margin-left: $spacing-0; margin-right: $spacing-0; }
+.mx-1 { margin-left: $spacing-1; margin-right: $spacing-1; }
+.mx-2 { margin-left: $spacing-2; margin-right: $spacing-2; }
+.mx-3 { margin-left: $spacing-3; margin-right: $spacing-3; }
+.mx-4 { margin-left: $spacing-4; margin-right: $spacing-4; }
+.mx-5 { margin-left: $spacing-5; margin-right: $spacing-5; }
+
+// y-axis margin
+.my-0 { margin-top: $spacing-0; margin-bottom: $spacing-0; }
+.my-1 { margin-top: $spacing-1; margin-bottom: $spacing-1; }
+.my-2 { margin-top: $spacing-2; margin-bottom: $spacing-2; }
+.my-3 { margin-top: $spacing-3; margin-bottom: $spacing-3; }
+.my-4 { margin-top: $spacing-4; margin-bottom: $spacing-4; }
+.my-5 { margin-top: $spacing-5; margin-bottom: $spacing-5; }
+
+// top margin
+.mt-0 { margin-top: $spacing-0; }
+.mt-1 { margin-top: $spacing-1; }
+.mt-2 { margin-top: $spacing-2; }
+.mt-3 { margin-top: $spacing-3; }
+.mt-4 { margin-top: $spacing-4; }
+.mt-5 { margin-top: $spacing-5; }
+
+// right margin
+.mr-0 { margin-right: $spacing-0; }
+.mr-1 { margin-right: $spacing-1; }
+.mr-2 { margin-right: $spacing-2; }
+.mr-3 { margin-right: $spacing-3; }
+.mr-4 { margin-right: $spacing-4; }
+.mr-5 { margin-right: $spacing-5; }
+
+// bottom margin
+.mb-0 { margin-bottom: $spacing-0; }
+.mb-1 { margin-bottom: $spacing-1; }
+.mb-2 { margin-bottom: $spacing-2; }
+.mb-3 { margin-bottom: $spacing-3; }
+.mb-4 { margin-bottom: $spacing-4; }
+.mb-5 { margin-bottom: $spacing-5; }
+
+// left margin
+.ml-0 { margin-left: $spacing-0; }
+.ml-1 { margin-left: $spacing-1; }
+.ml-2 { margin-left: $spacing-2; }
+.ml-3 { margin-left: $spacing-3; }
+.ml-4 { margin-left: $spacing-4; }
+.ml-5 { margin-left: $spacing-5; }
+
+// Padding utility classes
+
+// All direction padding
+.p-0 { padding: $spacing-0; }
+.p-1 { padding: $spacing-1; }
+.p-2 { padding: $spacing-2; }
+.p-3 { padding: $spacing-3; }
+.p-4 { padding: $spacing-4; }
+.p-5 { padding: $spacing-5; }
