@@ -8,19 +8,15 @@ To start using the custom CSS Framework, following these steps:
 ```
 https://github.com/QingjieShen/codewebquartet
 ```
-2. Navigate to the project directory:
-```
-cd src
-```
-3. Install dependencies:
+2. Install dependencies:
 ```
 npm install sass
 ```
 4. Compile the SASS files:
 ```
-sass --watch codewebquartet.scss ../css/style.css
+npm run scss
 ```
-5. Include the compiled CSS in the HTML file
+5. Include the compiled CSS in your HTML file
 ```
 <link rel="stylesheet" href="path/to/compiled/css/styles.css">
 ```
@@ -31,391 +27,67 @@ sass --watch codewebquartet.scss ../css/style.css
 
 ## Technology
 This framework leverages the following technologies:
+### SASS: 
+A powerful CSS preprocessor that extends CSS with variables, nested rules, and more.
+### SASS Partials: 
+Modular SASS files that allow for better organization and maintainability of styles.
 
-#### SASS: 
-- A powerful CSS preprocessor that extends CSS with variables, nested rules, and more.
-#### SASS Partials: 
-- Modular SASS files that allow for better organization and maintainability of styles.
+## Customization
+This CSS framework provided a base style and a variety of utility classes to manage list styles, background colors, border styles, border radius, button styles, table styles, box shadows, flex and grid displays, and responsiveness. All variables are defined in the `_variables.scss` file, while the main file is `_codewebquarted.scss`, where all other module files are imported and compiled.
+### Customization Tips
 
-## Built-in Classes
-#### variables (make universal sizes, and color values as variables) - All
-#### codewebquartet (main file) - All
-#### font-family - Faye
+####  _base.scss
+- **Purpose**: Contains the default styles for HTML elements and some background, color, and border styles.
+- **How to Customize**: Open _base.scss and modify the styles for the HTML elements or change the background, color, and border styles as needed.
 
-#### reset - Clark
-#### base (Base style goes here) - Clark
-lists
-links
-heading
-paragraph
-tables - Clark
-forms - Clark
-filters - Clark
-border - Clark
-backgrounds
-##### Backgrounds
-- Background Colors
-    - bg-black
-    - bg-dark
-    - bg-orange
-    - bg-gray
-    - bg-bone
-##### Borders
-- Border Radius:
-    - rounded-0
-    - rounded-1
-    - rounded-2
-    - rounded-3
-    - rounded-4
-    - rounded-5
-    - rounded-tl-0
-    - rounded-tl-1
-    - rounded-tl-2
-    - rounded-tl-3
-    - rounded-tl-4
-    - rounded-tl-5
-    - rounded-tr-0
-    - rounded-tr-1
-    - rounded-tr-2
-    - rounded-tr-3
-    - rounded-tr-4
-    - rounded-tr-5
-    - rounded-br-0
-    - rounded-br-1
-    - rounded-br-2
-    - rounded-br-3
-    - rounded-br-4
-    - rounded-br-5
-    - rounded-bl-0
-    - rounded-bl-1
-    - rounded-bl-2
-    - rounded-bl-3
-    - rounded-bl-4
-    - rounded-bl-5
-- Border Width:
-    - border-0
-    - border-1
-    - border-2
-    - border-3
-    - border-4
-    - border-5
-- Border Color:
-    - border-black
-    - border-dark
-    - border-orange
-    - border-gray
-    - border-bone
-- Border Style:
-    - border-solid
-    - border-dashed
-    - border-dotted
-    - border-double
-    - border-hidden
-    - border-none
-    - border-bottom-solid
-    - border-bottom-dashed
-    - border-bottom-dotted
-    - border-bottom-double
-    - border-bottom-hidden
-    - border-bottom-none
-    - border-top-solid
-    - border-top-dashed
-    - border-top-dotted
-    - border-top-double
-    - border-top-hidden
-    - border-top-none
-    - border-right-solid
-    - border-right-dashed
-    - border-right-dotted
-    - border-right-double
-    - border-right-hidden
-    - border-right-none
-    - border-left-solid
-    - border-left-dashed
-    - border-left-dotted
-    - border-left-double
-    - border-left-hidden
-    - border-left-none
-##### Tables
-- Table Border
-    - border-collapse
-    - border-separate
-- Table Border Spacing
-    - table-boarder-spacing-0
-    - table-boarder-spacing-1
-    - table-boarder-spacing-2
-    - table-boarder-spacing-3
-    - table-boarder-spacing-4
-    - table-boarder-spacing-5
-    - table-boarder-x-spacing-0
-    - table-boarder-x-spacing-1
-    - table-boarder-x-spacing-2
-    - table-boarder-x-spacing-3
-    - table-boarder-x-spacing-4
-    - table-boarder-x-spacing-5
-    - table-boarder-y-spacing-0
-    - table-boarder-y-spacing-1
-    - table-boarder-y-spacing-2
-    - table-boarder-y-spacing-3
-    - table-boarder-y-spacing-4
-    - table-boarder-y-spacing-5
-- Table Layout
-    - table-auto
-    - table-fixed
-##### Forms
-- Inputs:
-    - form-input
-    - form-textarea
-    - form-select
-    - form-checkbox
-    - form-radio
-    - form-multiselect
-- Buttons:
-    - btn
-    - btn-primary
-    - btn-secdonary
-##### Lists
-- List Style Type:
-    - list-none
-    - list-disc
-    - list-decimal
-##### Links
-- Link Style:
-    - link-normal
-    - link-activated
-#### layout - Clark
-##### flex & grid -Clark
-- d-flex:
-- flex-row:
-- flex-column: 
-- grid: 
-- grid-cols-2: 
-##### media query - Clark
+#### _effect.scss
+- **Purpose**: Defines styles for box shadows.
+- **How to Customize**: Open _effect.scss and modify the box-shadow properties to achieve the desired shadow effects for your elements.
 
-#### typography
-##### Font Size - Faye
-    - font-xs
-    - font-sm
-    - font-md
-    - font-lg
-    - font-xl
+#### _filter.scss
+- **Purpose**: Contains styles for various CSS filters.
+- **How to Customize**: Open _filter.scss and adjust the filter properties such as blur, brightness, contrast, etc., to suit your design requirements.
 
-##### Font Style - Faye
-    - font-style-normal
-    - font-style-bold
-    - font-style-italic
-    
-##### Letter Spacing - Faye
-    - letter-spacing-1
-    - letter-spacing-2
-    - letter-spacing-3
-    - letter-spacing-4
-    - letter-spacing-5
-##### Line Height - Faye
-    - line-height-1
-    - line-height-2
-    - line-height-3
-    - line-height-4
-    - line-height-5
-##### Text Align - Hashan
-    - text-left
-    - text-center
-    - text-right
-    - text-justify
-    - text-start
-    - text-end
-##### Text Color - Hashan
-    - text-black
-    - text-dark
-    - text-orange
-    - text-gray
-    - text-bone
-##### Text Decoration - Hashan
-    - text-underline
-    - text-overline
-    - text-middleline
-    - text-noline
-##### spacing - Dulara
-- All direction margin:
-    - m-0
-    - m-1
-    - m-2
-    - m-3
-    - m-4
-    - m-5
-- x-axis margin:
-    - mx-0
-    - mx-1
-    - mx-2
-    - mx-3
-    - mx-4
-    - mx-5
-- y-axis margin:
-    - my-0
-    - my-1
-    - my-2
-    - my-3
-    - my-4
-    - my-5
-- top margin:
-    - mt-0
-    - mt-1
-    - mt-2
-    - mt-3
-    - mt-4
-    - mt-5
-- right margin:
-    - mr-0
-    - mr-1
-    - mr-2
-    - mr-3
-    - mr-4
-    - mr-5
-- bottom margin:
-    - mb-0
-    - mb-1
-    - mb-2
-    - mb-3
-    - mb-4
-    - mb-5
-- left margin:
-    - ml-0
-    - ml-1
-    - ml-2
-    - ml-3
-    - ml-4
-    - ml-5
-- All direction padding:
-    - p-0
-    - p-1
-    - p-2
-    - p-3
-    - p-4
-    - p-5
-- x-axis padding:
-    - px-0
-    - px-1
-    - px-2
-    - px-3
-    - px-4
-    - px-5
-- y-axis padding:
-    - py-0
-    - py-1
-    - py-2
-    - py-3
-    - py-4
-    - py-5
-- top padding:
-    - pt-0
-    - pt-1
-    - pt-2
-    - pt-3
-    - pt-4
-    - pt-5
-- right padding:
-    - pr-0
-    - pr-1
-    - pr-2
-    - pr-3
-    - pr-4
-    - pr-5
-- bottom padding:
-    - pb-0
-    - pb-1
-    - pb-2
-    - pb-3
-    - pb-4
-    - pb-5
-- left padding:
-    - pl-0
-    - pl-1
-    - pl-2
-    - pl-3
-    - pl-4
-    - pl-5
-- Absoulte width
-    - w-100
-    - w-200
-    - w-300
-    - w-400
-    - w-500
-    - w-600
-    - w-700
-    - w-800
-    - w-900
-- Absoulte height
-    - h-100
-    - h-200
-    - h-300
-    - h-400
-    - h-500
-    - h-600
-    - h-700
-    - h-800
-    - h-900
-- Percentage width
-    - wp-1
-    - wp-2
-    - wp-3
-    - wp-4
-    - wp-5
-    - wp-6
-    - wp-7
-    - wp-8
-    - wp-9
-    - wp-10
-    - w-screen
-- Percentage height
-    - hp-1
-    - hp-2
-    - hp-3
-    - hp-4
-    - hp-5
-    - hp-6
-    - hp-7
-    - hp-8
-    - hp-9
-    - hp-10
-    - h-screen
-##### font-weight - Dulara
+#### _fontfamily.scss
+- **Purpose**: Imports and sets the font families used in the framework.
+- **How to Customize**: Open _fontfamily.scss and update the font-family definitions to include the fonts you want to use in your project.
 
-#### Effects - Clark
-- Box Shadow Size:
-    - box-shadow-0
-    - box-shadow-1
-    - box-shadow-2
-    - box-shadow-3
-    - box-shadow-4
-    - box-shadow-5
-- Box Shadow Opacity:
-    - box-opacity-0
-    - box-opacity-1
-    - box-opacity-2
-    - box-opacity-3
-    - box-opacity-4
-    - box-opacity-5
+#### _layout.scss
+- **Purpose**: Manages media queries and responsive layout styles.
+- **How to Customize**: Open _layout.scss and modify the media queries to adjust the responsive behavior of your layout according to different screen sizes.
 
-#### Filters - Clark
-- Blur:
-    - blur-0
-    - blur-1
-    - blur-2
-    - blur-3
-    - blur-4
-    - blur-5
-- Brightness:
-    - bright-0
-    - bright-1
-    - bright-2
-    - bright-3
-    - bright-4
-    - bright-5
-- Contrast:
-    - contrast-0
-    - contrast-1
-    - contrast-2
-    - contrast-3
-    - contrast-4
-    - contrast-5
+#### _typography.scss
+- **Purpose**: Contains all the styles related to typography.
+- **How to Customize**: Open _typography.scss and change the typography settings, including font sizes, text alignments, text decoration, etc..
 
+#### _variables.scss
+- **Purpose**: Defines all the variables used throughout the framework.
+- **How to Customize**: Open _variables.scss and modify the values of the variables to change the default settings. This includes colors, spacings, font sizes, and more. Any change here will be reflected across the entire framework.
+
+### Examples
+
+#### Change the black background color
+- Open _variables.scss.
+- Locate the variable for the target background color (which is $bg-black).
+- Change its value to your desired color:
+```
+$bg-black: #3498db; // New primary color
+```
+
+### Change the Default Font Family:
+- Open _fontfamily.scss.
+- Modify the @import statements and font-family definitions to include your desired fonts
+```
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+```
+
+### Recompile the SASS Files:
+- After making your changes, recompile the SASS files to apply the customizations:
+Run scss to compile the SASS files
+```
+npm run scss
+```
