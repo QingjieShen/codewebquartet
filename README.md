@@ -12,11 +12,11 @@ https://github.com/QingjieShen/codewebquartet
 ```
 npm install sass
 ```
-4. Compile the SASS files:
+3. Compile the SASS files:
 ```
 npm run scss
 ```
-5. Include the compiled CSS in your HTML file
+4. Include the compiled CSS in your HTML file
 ```
 <link rel="stylesheet" href="path/to/compiled/css/styles.css">
 ```
