@@ -336,3 +336,70 @@ table {
 .table-solid-black {
     @include table(solid, solid, variables.$text-black);
 }
+
+// Margin utility classes
+// All direction margin
+.m-0 { margin: variables.$spacing-0; }
+.m-1 { margin: variables.$spacing-1; }
+.m-2 { margin: variables.$spacing-2; }
+.m-3 { margin: variables.$spacing-3; }
+.m-4 { margin: variables.$spacing-4; }
+.m-5 { margin: variables.$spacing-5; }
+
+// x-axis margin
+.mx-0 { margin-left: variables.$spacing-0; margin-right: variables.$spacing-0; }
+.mx-1 { margin-left: variables.$spacing-1; margin-right: variables.$spacing-1; }
+.mx-2 { margin-left: variables.$spacing-2; margin-right: variables.$spacing-2; }
+.mx-3 { margin-left: variables.$spacing-3; margin-right: variables.$spacing-3; }
+.mx-4 { margin-left: variables.$spacing-4; margin-right: variables.$spacing-4; }
+.mx-5 { margin-left: variables.$spacing-5; margin-right: variables.$spacing-5; }
+
+// y-axis margin
+.my-0 { margin-top: variables.$spacing-0; margin-bottom: variables.$spacing-0; }
+.my-1 { margin-top: variables.$spacing-1; margin-bottom: variables.$spacing-1; }
+.my-2 { margin-top: variables.$spacing-2; margin-bottom: variables.$spacing-2; }
+.my-3 { margin-top: variables.$spacing-3; margin-bottom: variables.$spacing-3; }
+.my-4 { margin-top: variables.$spacing-4; margin-bottom: variables.$spacing-4; }
+.my-5 { margin-top: variables.$spacing-5; margin-bottom: variables.$spacing-5; }
+
+// top margin
+.mt-0 { margin-top: variables.$spacing-0; }
+.mt-1 { margin-top: variables.$spacing-1; }
+.mt-2 { margin-top: variables.$spacing-2; }
+.mt-3 { margin-top: variables.$spacing-3; }
+.mt-4 { margin-top: variables.$spacing-4; }
+.mt-5 { margin-top: variables.$spacing-5; }
+
+// right margin
+.mr-0 { margin-right: variables.$spacing-0; }
+.mr-1 { margin-right: variables.$spacing-1; }
+.mr-2 { margin-right: variables.$spacing-2; }
+.mr-3 { margin-right: variables.$spacing-3; }
+.mr-4 { margin-right: variables.$spacing-4; }
+.mr-5 { margin-right: variables.$spacing-5; }
+
+// bottom margin
+.mb-0 { margin-bottom: variables.$spacing-0; }
+.mb-1 { margin-bottom: variables.$spacing-1; }
+.mb-2 { margin-bottom: variables.$spacing-2; }
+.mb-3 { margin-bottom: variables.$spacing-3; }
+.mb-4 { margin-bottom: variables.$spacing-4; }
+.mb-5 { margin-bottom: variables.$spacing-5; }
+
+// left margin
+.ml-0 { margin-left: variables.$spacing-0; }
+.ml-1 { margin-left: variables.$spacing-1; }
+.ml-2 { margin-left: variables.$spacing-2; }
+.ml-3 { margin-left: variables.$spacing-3; }
+.ml-4 { margin-left: variables.$spacing-4; }
+.ml-5 { margin-left: variables.$spacing-5; }
+
+// Padding utility classes
+
+// All direction padding
+.p-0 { padding: variables.$spacing-0; }
+.p-1 { padding: variables.$spacing-1; }
+.p-2 { padding: variables.$spacing-2; }
+.p-3 { padding: variables.$spacing-3; }
+.p-4 { padding: variables.$spacing-4; }
+.p-5 { padding: variables.$spacing-5; }
